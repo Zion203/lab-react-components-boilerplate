@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => {
   return {
+      server: {
+        port: 9999,
+      },
     build: {
       outDir: 'build',
     },
@@ -10,3 +13,4 @@ export default defineConfig(() => {
     assetsInclude: ["**/*.jpg", "**/*.JPG"],
   };
 });
+
