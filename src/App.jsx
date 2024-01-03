@@ -1,7 +1,8 @@
 import './App.css';
-import lake from "./image/lake.JPG";
+import lake from "./image/lake.JPG"
 import GallaryFooter from './components/GallaryFooter';
 import Header from './components/Header';
+import Main from './components/Main';
 const imageData = [
   {
     id:1,
@@ -25,18 +26,7 @@ function App() {
   return (
     <div>
       <Header></Header>
-
-      <div>
-        {
-          imageData.map(image=>{
-            return(
-              <div key={image.id} className="column">
-                <img src={image.img} alt=""></img>
-              </div>
-            )
-          })
-        }
-      </div>
+      <Main myprop ={imageData}></Main>
       {/* adding footer component */}
       <GallaryFooter/> 
     </div>
